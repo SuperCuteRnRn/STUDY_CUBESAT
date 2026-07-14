@@ -1,0 +1,3 @@
+[submodule "LINUX_I2C_LIB"]
+	path = LINUX_I2C_LIB
+	url = https://github.com/SuperCuteRnRn/I2C_LIB.git

@@ -1,0 +1,19 @@
+원 프로토콜 참조 안내
+=====================
+
+본 flat API(TXU_*)는 ISIS TRXVU 통신보드의 아래 인터페이스 문서에 근거한다.
+각 함수 → raw 명령 코드(CC) 대응은 DOC_TXU_API_20260714.md 5절 함수표 참조.
+
+  ISIS-TRXVU-ICD-0001  Interface Control Document
+      - 공통/RX/TX 명령 (uptime, frequency, PLL, firmware, reset,
+        RX 프레임 큐, TX telemetry/state/beacon/bitrate/callsign 등)
+
+  ISIS-TRXVU-ICD-0002  Transponder 확장 (FM 전용)
+      - Set TX mode(0x38), Get RSSI(0x51), Set RSSI threshold(0x52),
+        Transponder input freq set/get (0x32/0x33 또는 0x80/0x81)
+
+주의:
+  - Transponder 입력 freq 명령 코드(0x32/0x33 vs 0x80/0x81)는 DEV-001 시험으로
+    운영 기본 0x32/0x33 확정(2026-05-21). TXU_RunDev001Test()로 재확인 가능.
+  - ICD 원문 PDF는 배포 대상 사이트의 라이선스에 따라 별도 제공된다
+    (프로젝트 루트: ISIS-TRXVU-ICD-0001-Interface_Control_Document-01_01.pdf).
