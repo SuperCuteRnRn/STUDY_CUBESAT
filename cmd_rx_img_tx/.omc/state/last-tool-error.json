@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"cd /home/jun/STUDY_CUBESAT/cmd_rx_img_tx\\ntimeout -s INT 1.2 ./rx_img_tx 2>&1 | head -12; echo \\\"---(SIGINT 종료 테스트)---\\\"\",\"description\":\"Run rewritten binary briefly to confirm startup/shu...",
+  "error": "Exit code 130",
+  "timestamp": "2026-07-16T00:21:56.240Z",
+  "retry_count": 1
+}
